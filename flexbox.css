@@ -1,4 +1,74 @@
-
-.container{
-   
+*{
+    margin: 10px;;
+    padding: 10px; ;
+    box-sizing: border-box;
 }
+
+.Padre{
+}
+        .Header{
+        background: #000;
+        display: flex;
+        flex-flow: column nowrap;
+        height: 150px;
+        }
+            .Menu{
+                background: #393053;
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+                height: 50px;
+                
+            }
+                .logo{
+                    background: #443C68;
+                    
+                }
+                .nav{
+                    background: #443C68;
+                    flex-grow: 3
+                }
+                .social{
+                    background:#443C68 ;
+                    flex-grow: 1
+                }
+
+            .texto_principal{
+                background: #393053;
+                height: 30px;
+            }
+                h1{
+                    background: rgb(152, 45, 214);
+                    height: 5px;
+                }
+        .seccion{
+        background: #000;
+        display: flex;
+        flex-flow: column nowrap;
+        height: 400px;
+        }
+            .articulos{
+                background: #443C68;
+            }
+                .articulo{
+                    background: #635985;
+                }
+
+                .navegacion{
+                    background: #443C68;
+                }
+            .aside{
+                background: #443C68;
+            }
+                .publicidad{
+                    background: #635985;
+                }
+        .footer{
+        background: #000;
+        display: flex;
+        flex-flow: column nowrap;
+        height: 25%;
+        }
+            .pie{
+                background: #635985;
+            }
