@@ -7,13 +7,16 @@
 .Padre{
 }
         .Header{
-        background: #000;
-        display: flex;
-        flex-flow: column nowrap;
+            background: url(../img/1h.jpg);
+            background-position: center;
+            background-attachment: contain;
+            background-size: cover;
+            display: flex;
+            flex-flow: column nowrap;
     
         }
             .Menu{
-                background: #393053;
+                background: #353541;
                 display: flex;
                 flex-flow: row nowrap;
                 align-items: center;
@@ -21,20 +24,21 @@
                 
             }
                 .logo{
-                    background: #443C68;
+                    background: #060607;
                     flex: 1 1 auto;
-                    height: 30%;
+                  
                 }
                 .nav{
                     background: #443C68;
                     flex: 1 1 auto;
-                    height: 30%;
+                    
                 }
                 .social{
                     background:#443C68 ;
                     flex: 1 1 auto;
-                    height: 30%;
+                    
                 }
+                
 
             .texto_principal{
                 background: #393053;
