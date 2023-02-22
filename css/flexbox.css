@@ -16,7 +16,7 @@
     
         }
             .Menu{
-                background: #353541;
+                background: rgba(0, 0, 0, .1);
                 display: flex;
                 flex-flow: row nowrap;
                 align-items: center;
@@ -24,12 +24,12 @@
                 
             }
                 .logo{
-                    background: #060607;
+                  
                     flex: 1 1 auto;
                   
                 }
                 .nav{
-                    background: #443C68;
+                  
                     flex: 1 1 auto;
                     
                 }
