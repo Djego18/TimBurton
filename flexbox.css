@@ -10,55 +10,63 @@
         background: #000;
         display: flex;
         flex-flow: column nowrap;
-        height: 150px;
+    
         }
             .Menu{
                 background: #393053;
                 display: flex;
                 flex-flow: row nowrap;
                 align-items: center;
-                height: 50px;
+                height: 100px;
                 
             }
                 .logo{
                     background: #443C68;
-                    
+                    flex: 1 1 auto;
+                    height: 30%;
                 }
                 .nav{
                     background: #443C68;
-                    flex-grow: 3
+                    flex: 1 1 auto;
+                    height: 30%;
                 }
                 .social{
                     background:#443C68 ;
-                    flex-grow: 1
+                    flex: 1 1 auto;
+                    height: 30%;
                 }
 
             .texto_principal{
                 background: #393053;
-                height: 30px;
+                
             }
                 h1{
                     background: rgb(152, 45, 214);
-                    height: 5px;
+                    
                 }
         .seccion{
         background: #000;
         display: flex;
-        flex-flow: column nowrap;
-        height: 400px;
+        
         }
             .articulos{
                 background: #443C68;
+                display: flex;
+                flex: 2 1 auto;
+                flex-flow: row wrap;
             }
                 .articulo{
                     background: #635985;
+                    flex: 1 1 40%;
                 }
 
                 .navegacion{
-                    background: #443C68;
+                    background: #63579b;
+                    flex: 1 1 100%;
                 }
             .aside{
-                background: #443C68;
+                background: #514586;
+                flex: 1 1 auto;
             }
                 .publicidad{
                     background: #635985;
@@ -66,9 +74,35 @@
         .footer{
         background: #000;
         display: flex;
-        flex-flow: column nowrap;
-        height: 25%;
+        justify-content: center;
+        
         }
             .pie{
                 background: #635985;
+                display: flex;
             }
+
+@media all and (max-width: 768px){
+    .seccion{
+        flex-direction:column;
+    }
+    .Menu{
+        flex-direction: column;
+        height: auto;
+    }
+    .aside{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media all and (max-width: 600px){
+    .articulos{
+        flex-direction: column;
+
+    }
+}
+@media all and (max-width: 400px){
+    .aside{
+        flex-direction: column;
+    }
+}
