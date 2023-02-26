@@ -1,7 +1,18 @@
 *{
-    margin: 10px;;
-    padding: 10px; ;
-    box-sizing: border-box;
+    margin: 0px;
+    padding: 10px;
+    box-sizing: border-box; 
+   
+    
+}
+body{
+    font-family: 'Shantell Sans', cursive;
+    background-color: #000;
+    
+
+}
+a{
+    text-decoration: none;
 }
 
 .Padre{
@@ -9,7 +20,7 @@
     flex-flow: column nowrap;
 }
         .Header{
-            background: url(../img/1h.jpg);
+            background: url(../img/3h.jpg);
             background-position: center;
             background-attachment: contain;
             background-size: cover;
@@ -18,34 +29,55 @@
     
         }
             .Menu{
-                background: rgba(0, 0, 0, .1);
+                background: rgba(0, 0, 0, .3);
                 display: flex;
                 flex-flow: row nowrap;
+                height: 60px;
                 align-items: center;
-                height: 100px;
+                border-bottom: 1px solid rgb(255, 255, 255, .5);
                 
             }
                 .logo{
                   
                     flex: 1 1 auto;
+                    font-size: 30px;
                 }
                     .logo a{
-                        color: #fff;  
-                        text-decoration: none;
+                        color: #7608cf;     
+                    }
+                    .logo a:hover{
+                        color: rgb(253, 251, 251);     
                     }
                 .nav{
                   
                     flex: 1 1 auto;
                     
                 }
+                    .nav a {
+                        color: #8a05f7;
+                        font-size: 11px;
+                        text-transform: uppercase;
+                        padding: 0 10px;
+                        letter-spacing: 5px;
+                    }
+                    .nav a:hover{
+                        color: rgb(250, 246, 246);     
+                    }
                 
             .texto_principal{
-                background: #393053;
+                
+                height: 500px;
+                display: flex;
+                align-items: center;
                 
             }
                 h1{
-                    background: rgb(152, 45, 214);
-                    
+                    font-family:initial;
+                    color: #8a05f7;
+                    font-size: 21px;
+                    font-weight: 300px;
+                    text-align: center;
+                    line-height: 1.6;
                 }
         .seccion{
         background: #000;
@@ -53,14 +85,23 @@
         
         }
             .articulos{
-                background: #443C68;
+                background: #f7f7f7;
                 display: flex;
                 flex: 2 1 auto;
                 flex-flow: row wrap;
             }
                 .articulo{
-                    background: #635985;
+                    
                     flex: 1 1 40%;
+                    color: #444;
+                    font-size: 13px;
+                    letter-spacing: 1px;
+                }
+                h2{
+                    color: #050505;
+                    font-size: 25px;
+                    text-transform: uppercase;
+                    
                 }
 
                 .navegacion{
