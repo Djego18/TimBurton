@@ -90,7 +90,7 @@ a{
         
         }
             .articulos{
-                background: #706c6c;
+                /* background: #706c6c; */
                 display: flex;
                 flex: 2 1 auto;
                 flex-flow: row wrap;
@@ -129,13 +129,24 @@ a{
 
                 .navegacion{
                     background: #d8d6e2;
-                    flex: 1 1 80%;
+                    flex: 1 1 100%;
+                    margin: 10px 10px 0 0px;
+
+                }
+                .navegacion a {
+                    color: #4e4c4c;
+                    font-size: 11px;
+                    text-transform: uppercase;
+                    padding: 0 10px;
+                    letter-spacing: 2px;
+                }
+                .navegacion a:hover{
+                    color: #fff;
                 }
             .aside{
-                background: #706c6c;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                /* background: #706c6c; */
+                flex: 1 1 auto;
+                margin: 10px 5px 10px 0;
             }
             .aside img{
                 width: 100%;
@@ -147,7 +158,7 @@ a{
                 text-transform: uppercase;
             }
                 .publicity{
-                    background:  rgba(0, 0, 0, .3);
+                    /* background:  rgba(0, 0, 0, .3); */
                     
                 }
         .footer{
@@ -157,11 +168,20 @@ a{
         
         }
             .pie{
-                background: #635985;
+                /* background: #635985; */
                 display: flex;
+                text-align: center;
+                margin-top: 10px;
+            }
+            .pie a {
+                color: #fff;
+                font-size: 11px;
+                text-transform: uppercase;
+                padding: 0 10px;
+                letter-spacing: 2px;
             }
 
-@media all and (max-width: 768px){
+@media all and (max-width: 1002px){
     .seccion{
         flex-direction:column;
     }
@@ -173,13 +193,25 @@ a{
         display: flex;
         justify-content: center;
     }
+    h1{
+        font-size: 15px;
+    }
+    .texto_principal{
+        height: 450px;
+
+    }
 }
-@media all and (max-width: 600px){
+@media all and (max-width: 762px){
     .articulos{
         flex-direction: column;
 
     }
 }
+@media all and (max-width: 650px){
+    .off{display: none;}
+    .nav a{font-size: 20px;}
+}
+
 @media all and (max-width: 400px){
     .aside{
         flex-direction: column;
