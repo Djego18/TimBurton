@@ -181,7 +181,7 @@ a{
                 letter-spacing: 2px;
             }
 
-@media all and (max-width: 1002px){
+@media all and (max-width: 1440px){
     .seccion{
         flex-direction:column;
     }
@@ -201,19 +201,60 @@ a{
 
     }
 }
-@media all and (max-width: 762px){
+@media all and (max-width: 834px){
     .articulos{
         flex-direction: column;
 
     }
 }
-@media all and (max-width: 650px){
+@media all and (max-width: 665px){
     .off{display: none;}
     .nav a{font-size: 20px;}
 }
 
-@media all and (max-width: 400px){
+@media all and (max-width: 390px){
     .aside{
         flex-direction: column;
     }
+}
+#menu_on{
+	display: inline-block;
+	width:30px;
+	height: 20px;
+	position: relative;
+	z-index: 2;
+}
+ 
+#menu_on span{
+	width: 100%;
+	height: 4px;
+	border-radius: 4px;
+	display: block;
+	position: absolute;
+	background: #7608cf;
+	transition: all 0.25s ease; 
+	transform-origin : 0px 100%;
+}
+ 
+#menu_on span:nth-child(2){
+	top: calc(50% - 2px);
+}
+ 
+#menu_on span:nth-child(3){
+bottom: 0;
+}
+
+.hamburguesa{
+    position: fixed;
+	top: 0;
+	bottom: 0;
+	left:-300px; /* Escondemos nuestro menú con un valor negativo */ 
+	width: 300px;
+	z-index: 1;
+	padding: 90px 30px 30px;
+	background: #68C5DB;
+	opacity: 0;
+	transition: all 0.75s ease;
+	font-size: 1.2em;
+	overflow-y: auto;
 }
